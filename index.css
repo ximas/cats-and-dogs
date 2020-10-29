@@ -1,0 +1,57 @@
+body {
+    background: black;
+}
+ 
+#players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2px;
+    height: 100px;
+    width: 800px;
+    background: lightsteelblue;
+    margin-bottom: 10px;
+}
+
+#players > div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.active-player {
+    background: green;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2px;
+    row-gap: 2px;
+    height: 800px;
+    width: 800px;
+    background: lightseagreen;
+}
+
+#game-board > div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid lightsalmon;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.piece {
+    font-size: xx-large; 
+}
+
+.winner {
+    background: maroon;
+}
